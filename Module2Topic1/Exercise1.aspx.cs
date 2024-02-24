@@ -13,5 +13,10 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void PlayButton_Click(object sender, EventArgs e)
+        {
+            nowPlaying.InnerText = "Perfect Night by LE SSERAFIM is Playing.";
+        }
     }
 }

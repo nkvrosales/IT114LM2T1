@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Exercise5.master.cs" Inherits="Module2Topic1.Exercise5" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        iframe {
+            justify-content: center;
+            outline: none;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 1500px;
+            height: 450px;
+        }
+
+        #main-frame {
+            display:flex;
+            justify-content: center;
+            padding: 30px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #title {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-bottom: 25px;
+            margin-top: 30px;
+        }
+
+        .body {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 120px;
+            margin-bottom: 18px;
+            margin-top: 15px;
+            margin-right: 80px;
+            word-wrap: break-word;
+        }
+        
+        
+        .content {
+            padding: 20px;
+        }
+
+        footer {
+            display: flex;
+            padding: 30px;
+            justify-content: center;
+            margin-top: 30px;
+            background-color: #333;
+            color: #fff;
+        }
+
+    </style>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+     <header>
+        <nav id="exercises-nav">
+            <ul>
+                <li><a href="javascript:void(0)" onclick="SetFrameURL('Exercise1.aspx')">Exercise 1</a></li>
+                <li><a href="javascript:void(0)" onclick="SetFrameURL('Exercise2.aspx')">Exercise 2</a></li>
+                <li><a href="javascript:void(0)" onclick="SetFrameURL('Exercise3.aspx')">Exercise 3</a></li>
+                <li><a href="javascript:void(0)" onclick="SetFrameURL('Exercise4.aspx')">Exercise 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MasterContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer id="footer" runat="server">
+        <p>Copyright 2024 &#169; Nicklaus Karl Vergel Rosales. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function SetFrameURL(url) {
+            document.getElementById("main-display").src = url;
+        }
+    </script>
+
+</body>
+</html>

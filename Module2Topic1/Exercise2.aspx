@@ -47,9 +47,9 @@
         <%-- Hint: https://learn.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.checkboxlist?view=netframework-4.8.1#:~:text=CheckBoxList%20id=%22checkboxlist1%22 --%>
         <asp:Label ID="Label2" runat="server" Text="Which performances are you planning to attend?"></asp:Label>
         <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-            <asp:ListItem Text="The Strokes" />
-            <asp:ListItem Text="The Beatles" />
-            <asp:ListItem Text="The Smiths" />
+            <asp:ListItem Text="Fall Out Boy" />
+            <asp:ListItem Text="twenty one pilots" />
+            <asp:ListItem Text="Imagine Dragons" />
         </asp:CheckBoxList>
         <%-- TODO 3.6 Create a FileUpload for their proof of payment. It must only accept JPG and PNG files. --%>
         <%-- Hint: https://www.tutorialspoint.com/asp.net/asp.net_file_uploading.htm#:~:text=%3Ch3%3E%20File%20Upload:%3C/h3%3E --%>

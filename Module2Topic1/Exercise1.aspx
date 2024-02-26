@@ -13,10 +13,10 @@
     <form runat="server">
         <%-- TODO 2.1 Create a label displaying the name of your favorite song and its artist (e.g. Yesterday - The Beatles)--%>
         <%-- Hint: https://www.tutorialspoint.com/asp.net/asp.net_custom_controls.htm#:~:text=Label --%>
-        <asp:Label runat="server" Text="Perfect Night - LE SSERAFIM"></asp:Label><br/>
+        <asp:Label runat="server" Text="Stressed Out - twenty one pilots"></asp:Label><br/>
         <%-- TODO 2.2 Create an image that is 200px by 200x big showing the album cover of your favorite song. Make sure to set the alternative text. --%>
         <%-- Hint: https://www.tutorialspoint.com/asp.net/asp.net_basic_controls.htm#:~:text=Image%20Control --%>
-        <asp:Image runat="server" ImageUrl="Perfect Night.jpg" AlternateText="Perfect Night" /><br />
+        <asp:Image runat="server" ImageUrl="Stressed Out.png" AlternateText="Blurryface album cover" /><br />
 
         <%-- TODO 2.3 Create three buttons with texts. "Prev", "Play", and "Next" --%>
         <%-- Hint: https://www.tutorialspoint.com/asp.net/asp.net_basic_controls.htm#:~:text=Button%20Controls --%>
